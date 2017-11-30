@@ -1,0 +1,64 @@
+ \documentclass[a4paper, 14pt]{scrbook}
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx} 
+\usepackage{multirow}
+\usepackage{tabularx} 
+\usepackage{datetime}
+\usepackage{booktabs}
+\usepackage{comment}
+\usepackage{hyperref}
+\setlength\extrarowheight{0pt}
+\setlength{\parindent}{0pt}
+\begin{document} 
+\pagestyle{empty} % nicht nummerieren lassen
+\begin{figure}[t]
+\hspace{13.0cm}
+\includegraphics[height=50mm, width=60mm]{vitLogo.jpg}
+\end{figure}
+
+Ausbildungsnachweis Nr.: 6 \\
+Name: Ahmadi, Fida  \\ 
+Ausbildungsjahr: 2 \\
+Kalenderwoche:  36 \\ 
+04.09.17 - 08.09.17\\
+\newdateformat{specialdate}{\THEYEAR-\twodigit{\THEMONTH}-\twodigit{\THEDAY}}
+\date{\specialdate\today}
+
+\begin{table}[h]
+\renewcommand{\arraystretch}{1.0}
+\centering
+\begin{tabular*}{\linewidth}{lp{125mm}rl} 
+\multicolumn{3}{c} {\huge{Wochenbericht}} \\ \hline \hline 
+ 
+	Tag & Beschäftigung   & Std. \\ \hline 
+   Montag      
+   
+	&  \textbf{vit}, Vorbereitung auf SQL-Workshop   \\
+   & Backlogpflege DGFG & 7,9 \\ \hline
+
+\multirow{1}{*} {Dienstag} 
+
+    & Berufsschule ( Geschäftsprozesse, Politik, ITSysteme ) & 7,9 \\  \hline
+
+\multirow{1}{*} {Mittwoch} 
+
+ &  \textbf{vit}, Arbeit an einer DGFG-Story \\ 
+ & SQL-Schulung & 7,9 \\  \hline
+
+\multirow{1}{*} {Donnerstag} 
+
+ & \textbf{vit}, Team B, Backlogpflege  & \\
+ & Selbststudium \href{https://www.sololearn.com/Certificate/1014-6081289/pdf/}{HTML} \& \href{https://www.sololearn.com/Certificate/1060-6081289/pdf}{SQL} auf der Webseite \href{https://www.sololearn.com/}{"SoloLearn"} & 7,9   \\ \hline
+
+\multirow{1}{*} {Freitag} 
+	 &  \textbf{vit}, Team B, Retrospektive & \\
+ & Selbststudium \href{https://www.sololearn.com/Certificate/1024-6081289/pdf/}{JavaScript} auf \href{https://www.sololearn.com/}{"SoloLearn"} & 7,9 \\ \hline
+\multicolumn{2}{l} {Anzahl der Stunden insgesamt:} & 39,5 \\ \hline
+\end{tabular*}
+\end{table} 
+\centering
+\par\vspace{2\baselineskip} % wie viele Zeile Abstadn soll es haben
+$\overline{\mbox{\small{Ort, Datum, Unterschrift  des Auszubildenden} }}$ ~~~  $\overline{\mbox{\small{Ort, Datum, Unterschrift des Ausbilders}} }$
+\end{document}
+
+
